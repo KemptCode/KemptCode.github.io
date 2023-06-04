@@ -8,14 +8,15 @@
 }
 
 .card {
-    box-sizing: border-box; /* includes margin+padding in width+height calculations*/
+    box-sizing: border-box;
+    /* includes margin+padding in width+height calculations*/
 
-    
-        padding: 1rem 1.2rem;
-        border-radius: var(--border-radius);
-        background: rgba(var(--card-rgb), 0);
-        border: 1px solid rgba(var(--card-border-rgb), 0);
-        transition: background 200ms, border 200ms;
+
+    padding: 1rem 1.2rem;
+    border-radius: var(--border-radius);
+    background: rgba(var(--card-rgb), 0);
+    border: 1px solid rgba(var(--card-border-rgb), 0);
+    transition: background 200ms, border 200ms;
 }
 
 /* Enable hover only on non-touch devices */
