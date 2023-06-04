@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     // sample portfolio footer with links to social media
     <footer className={styles.footer}>
-      Sample footer
+      Always learning something new!
     </footer>
   )
 }
