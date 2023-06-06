@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Component from ''
 import { useRouter } from 'next/router';
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
@@ -7,8 +8,18 @@ import Footer from '@/components/footer/Footer'
 
 const inter = Inter({ subsets: ['latin'] })
 
-const lookupTable: Record<string, string> = {
-  'spleef': 'Something about the old project'
+const lookupTable: {
+  [name: string]: {
+    'thumbnail': string,
+    'description': string,
+    'content': any
+  }
+} = {
+  'spleef': {
+    thumbnail: '',
+    description: 'Something about the old project',
+    content: <></>
+  }
 };
 
 export default function Home() {
