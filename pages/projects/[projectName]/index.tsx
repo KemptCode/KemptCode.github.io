@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import Component from ''
 import { useRouter } from 'next/router';
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
@@ -10,16 +9,39 @@ const inter = Inter({ subsets: ['latin'] })
 
 const lookupTable: {
   [name: string]: {
-    'thumbnail': string,
-    'description': string,
-    'content': any
+    title: string,
+    endTimeStamp: Date,
+    startTimeStamp?: Date,
+    tags: string[],
+    thumbnail: string,
+    description: string,
+    content: any
   }
 } = {
   'spleef': {
+    title: 'Spleef in Roblox',
+    endTimeStamp: new Date(2015, 2, 6),
+    tags: ['lua', 'roblox', 'game'],
     thumbnail: '',
     description: 'Something about the old project',
     content: <></>
-  }
+  },
+  'mazeGenerator': {
+    title: 'Maze Generator',
+    endTimeStamp: new Date(2020, 10, 20),
+    tags: ['python', 'algorithm'],
+    thumbnail: 'https://github.com/KemptCode/Maze_generator/raw/master/maze_5.png',
+    description: 'Creates a maze using a Prim\s algorithm.',
+    content: <></>
+  },
+  'fingerTracker': {
+    title: 'Finger Tracker Game',
+    endTimeStamp: new Date(2021, 4, 5),
+    tags: ['java', 'ml', 'computer vision', 'game'],
+    thumbnail: '',
+    description: 'Uses MediaPipe to track fingers in a gamified way.',
+    content: <></>
+  },
 };
 
 export default function Home() {
