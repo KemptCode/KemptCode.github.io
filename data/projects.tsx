@@ -8,12 +8,12 @@ const projectLookupTable: {
       description: string,
     }
   } = {
-    'spleef': {
-      title: 'Spleef in Roblox',
-      endTimeStamp: new Date(2015, 2, 6),
-      tags: ['lua', 'roblox', 'game'],
+    'fingerTracker': {
+      title: 'Finger Tracker Game',
+      endTimeStamp: new Date(2021, 4, 5),
+      tags: ['java', 'ml', 'computer vision', 'game'],
       thumbnail: '',
-      description: 'Something about the old project',
+      description: 'Uses MediaPipe to track fingers in a gamified way.',
     },
     'mazeGenerator': {
       title: 'Maze Generator',
@@ -22,12 +22,12 @@ const projectLookupTable: {
       thumbnail: 'https://github.com/KemptCode/Maze_generator/raw/master/maze_5.png',
       description: 'Creates a maze using a Prim\s algorithm.',
     },
-    'fingerTracker': {
-      title: 'Finger Tracker Game',
-      endTimeStamp: new Date(2021, 4, 5),
-      tags: ['java', 'ml', 'computer vision', 'game'],
+    'spleef': {
+      title: 'Spleef in Roblox',
+      endTimeStamp: new Date(2015, 2, 6),
+      tags: ['lua', 'roblox', 'game'],
       thumbnail: '',
-      description: 'Uses MediaPipe to track fingers in a gamified way.',
+      description: 'Something about the old project',
     },
   };
 

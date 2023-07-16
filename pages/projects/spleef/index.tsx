@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import { useRouter } from 'next/router';
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
 import Navbar from '@/components/navbar/Navbar'
@@ -8,8 +7,6 @@ import Footer from '@/components/footer/Footer'
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
-  const router = useRouter();
-
   return (
     <>
       <Head>
@@ -20,7 +17,7 @@ export default function Home() {
       </Head>
       <main className={`${styles.main} ${inter.className}`}>
         <Navbar />
-        
+
         <Footer />
       </main>
     </>
