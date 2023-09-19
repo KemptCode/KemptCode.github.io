@@ -8,6 +8,13 @@ const projectLookupTable: {
       description: string,
     }
   } = {
+    'recreateWeb': {
+      title: 'Recreate Web Layouts',
+      endTimeStamp: new Date(2022, 8, 5),
+      tags: ['javascript'],
+      thumbnail: '',
+      description: 'Studying other websites as a way to understand front-end development.'
+    },
     'fingerTracker': {
       title: 'Finger Tracker Game',
       endTimeStamp: new Date(2021, 4, 5),
